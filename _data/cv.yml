@@ -1,0 +1,236 @@
+cv:
+  #  name: Albert Einstein
+  #  label: Scientist
+  #  email: einstein@example.com
+  #  location: Princeton, NJ
+  #  image: ""
+  #  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+
+  #  social_networks:
+  #    - network: X
+  #      username: AlbertEinstein
+  #    - network: GitHub
+  #      username: example
+  #    - network: LinkedIn
+  #      username: example
+
+  #  address:
+  #    street: 2712 Broadway St
+  #    city: San Francisco
+  #    region: California
+  #    postalCode: CA 94115
+  #    countryCode: US
+
+  sections:
+    Education:
+      - institution: University of Oxford
+        location: Oxford
+        area: Computer Science
+        studyType: DPhil (PhD)
+        start_date: 2004
+        end_date: 2008
+        highlights:
+          - A service-oriented architecture and language for abstracted distributed algorithms
+
+      - institution: University of Oxford
+        location: Oxford
+        area: Computer Science
+        studyType: BA Hons 1st class
+        start_date: 2000
+        end_date: 2004
+        highlights:
+          - Awarded Hoare prize for top 1st in Computer Science in 2004
+          - Awarded Exhibition Scholarship for exceptional academic achievement
+
+    Experience:
+      - company: Oracle Labs
+        position: Consulting member of technical staff
+        location: Remote
+        start_date: 2025
+        end_date: 2026
+        summary: Technical lead on the Sandwood probabilistic programming project
+        highlights:
+          - Responsible for the design of Sandwood and setting the direction of the project
+          - Lead a team of junior researchers
+          - Built PoCs with teams across Oracle to take advantage of Sandwood
+
+      - company: Oracle Labs
+        position: Principal member of technical staff
+        location: Remote
+        start_date: 2014
+        end_date: 2025
+        summary: Technical lead on the Sandwood probabilistic programming project and the Pandia NUMA software performance prediction project
+        highlights:
+          - Responsible for the design and direction of the Sandwood and Pandia projects
+          - Lead a team of junior researchers
+          - Built PoCs with teams across Oracle to take advantage of Sandwood
+          - Built Pandia as a component of the rack scale computing project
+
+      - company: Advanced Processor Technology group, University of Manchester
+        position: Research Associate
+        location: Manchester
+        start_date: 2010
+        end_date: 2014
+        summary: Worked on the Teraflux project
+        highlights:
+          - Architected and built DFScala, a dataflow library for Scala
+          - Architected and built MUTS, a Scala software transactional memory library
+          - Architected and built Nesoi, a tool to statically check the memory usage of MUTS and DFScala to prevent unprotected shared memory modifications
+          - Lectured and ran practicals for the computer architecture course
+
+      - company: Fujitsu Laboratories of Europe
+        position: Senior Researcher
+        location: Southall
+        start_date: 2009
+        end_date: 2010
+
+      - company: Oxford eResearch Centre, University of Oxford
+        position: Research Associate
+        location: Oxford
+        start_date: 2007
+        end_date: 2009
+        summary: Worked on exploring new technologies and applying them to real world problems faced by domain scientists
+        highlights:
+          - Developed tooling and abstractions to assist in programming in multi-core and GPGPU programming environments
+          - Developed PoCs for GPGPU based software for projects ranging from medical imagery, to models of the visual cortex, to real-time processing of radio telescope data to detect pulsars
+
+      - company: Google
+        position: Software Engineer
+        location: Mountain View
+        start_date: 2006
+        end_date: 2006
+        summary: Summer internship developing monitoring software for the Google Checkout project
+
+      - company: Merton College, University of Oxford
+        position: Tutor
+        location: Oxford
+        start_date: 2005
+        end_date: 2009
+        summary: Taught object oriented programming
+
+      - company: Computing Laboratory, University of Oxford
+        position: Demonstrator
+        location: Oxford
+        start_date: 2004
+        end_date: 2007
+        summary: Worked as a demonstrator on a wide range of CS courses
+
+    #    Volunteer:
+    #      - company: People's Climate March
+    #        position: Lead Organizer
+    #        location: Zurich, Switzerland
+    #        start_date: 2014-04-01
+    #        end_date: 2015-07-01
+    #        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+    #        highlights:
+    #          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
+    #          - "Men of the year 2014 by Time magazine"
+
+    Notable Achievements:
+      - title: Awarded Hoare prize
+        date: 2004
+        summary: Prize for the highest overall grade in Computer Science that year
+
+      - title: Shortlisted for a Royal Society university research fellowship
+        date: 2013
+
+      - title: Awarded best paper at MULTIPROG
+        date: 2012
+
+      - title: Awarded junior research fellowship at Pembroke College, University of Oxford
+        date: 2008
+
+      - title: Shortlisted for AXA research funding by the University of Oxford
+        date: 2008
+        summary: 1 of from 3 from the University of Oxford
+
+      - title: Nominated for best student paper WWW2007
+        date: 2007
+        summary: 14% acceptance rate.
+
+      - title: Awarded student paper at UK eScience all hands meeting
+        date: 2006
+
+      - title: Awarded exhibition scholarship
+        date: 2001
+        summary: Awarded by Worcester College, University of Oxford for exceptional academic achievement
+
+      - title: Awarded 2 half blues for varsity gliding
+        date: 2005, 2007
+
+#    Publications:
+#      - title: Zur Elektrodynamik bewegter Körper
+#        authors:
+#          - Albert Einstein
+#        publisher: Annalen der Physik
+#        releaseDate: 1905-06-30
+#        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
+#        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+
+#      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+#        authors:
+#          - Albert Einstein
+#        publisher: Annalen der Physik
+#        releaseDate: 1905-03-18
+#        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
+#        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+
+#      - title: Die Grundlage der allgemeinen Relativitätstheorie
+#        authors:
+#          - Albert Einstein
+#        publisher: Annalen der Physik
+#        releaseDate: 1916-03-20
+#        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
+#        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+
+#    Skills:
+#      - name: Physics
+#        level: Master
+#        icon: fa-solid fa-hashtag
+#        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+
+#    Languages:
+#      - name: German
+#        summary: "Native speaker"
+
+#      - name: English
+#        summary: "Fluent"
+
+#    Interests:
+#      - name: Physics
+#        icon: fa-solid fa-tag
+#        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+
+#    Certificates:
+#      - name: Machine Learning
+#        date: 2018-01-01
+#        issuer: Stanford University
+#        icon: fa-solid fa-location-dot
+
+#      - name: Quantum Computing
+#        date: 2018-01-01
+#        issuer: Stanford University
+#        icon: fa-solid fa-tag
+
+#      - name: Quantum Information
+#        date: 2018-01-01
+#        issuer: Stanford University
+#        icon: fa-solid fa-envelope
+
+#        Projects:
+#          - name: Quantum Computing
+#            summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+#            highlights:
+#              - Quantum Teleportation
+#              - Quantum Cryptography
+#            start_date: 2018-01-01
+#            end_date: 2018-01-01
+
+#      References:
+#        - name: Professor John Doe
+#          icon: fa-solid fa-laptop
+#          reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+
+#        - name: Professor Jane Smith
+#          icon: fa-solid fa-thumbtack
+#          reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.

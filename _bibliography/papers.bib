@@ -1,0 +1,424 @@
+@inproceedings{lafi2025,
+  author = {Goodman, Daniel and Pocock, Adam and Natalia Kosilova},
+  title = {Sandwood: Runtime adaptable probabilistic programming for Java},
+  year = {2025},
+  month = "January",
+  booktitle = {Proceedings of  Languages for Inference 2025},
+  keywords = {Sandwood, Java, MCMC, Parallel Programming, Probabilistic Programming},
+  location = {Online, Denver, Colorado, United States},
+  series = {LAFI '25},
+  bibtex_show = {true},
+  pdf = {sandwood-abstract.pdf}
+
+}
+
+@article{bandwidthPatterns,
+  title = {Modeling memory bandwidth patterns on NUMA machines with performance counters}, 
+  author = "Daniel Goodman and Roni Haecki and Tim Harris",
+  abstract = {Computers used for data analytics are often NUMA systems with multiple sockets per machine, multiple
+cores per socket, and multiple thread contexts per core. To get the peak performance out of these machines requires the correct number of threads to be placed in the correct positions on the machine. One particularly interesting element of the placement of memory and threads is the way it effects the movement of data around the machine, and the increased latency this can introduce to reads and writes. In this paper we describe work on modeling the bandwidth requirements of an application on a NUMA compute node based on the placement of threads. The model is parameterized by sampling performance counters during 2 application runs with carefully chosen thread placements. Evaluating the model with thousands of measurements shows a median difference from predictions of 2.34% of the bandwidth. The results of this modeling can be used in a number of ways varying from: Performance debugging during development where the programmer can be alerted to potentially problematic memory access patterns; To systems such as Pandia which take an application and predict the performance and system load of a proposed thread count and placement; To libraries of data structures such as Parallel Collections and Smart Arrays that can abstract from the user memory placement and thread placement issues when parallelizing code.},
+  year = "2021",
+  month = "June",
+  eprint = {2106.08026},
+  archivePrefix = {arXiv},
+  journal = {arXiv},
+  primaryClass = {cs.DC},
+  url = {https://arxiv.org/abs/2106.08026},
+  bibtex_show = {true},
+  pdf = {ArXiv-bandwidth.pdf}
+}
+
+@inproceedings{vate,
+  author = "Goodman, Daniel and Pocock, Adam and Peck, Jason and Steele, Guy",
+  title = {Vate: Runtime adaptable probabilistic programming for Java},
+  year = "2021",
+  month = "April",
+  isbn = {9781450382984},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3437984.3458835},
+  abstract = {Inspired by earlier work on Augur, Vate is a probabilistic programming language for the construction of JVM based probabilistic models with an Object-Oriented interface. As a compiled language it is able to examine the dependency graph of the model to produce optimised code that can be dynamically targeted to different platforms. Using Gibbs Sampling, Metropolis-Hastings and variable marginalisation it can handle a range of model types and is able to efficiently infer values, estimate probabilities, and execute models.},
+  booktitle = {Proceedings of the 1st Workshop on Machine Learning and Systems},
+  pages = {62–69},
+  numpages = {8},
+  keywords = {Augur, Vate, Sandwood, Java, MCMC, Parallel Programming, Probabilistic Programming},
+  location = {Online, United Kingdom},
+  series = {EuroMLSys '21},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = {vate-2021.pdf}
+}
+
+@inproceedings{samrtCollections,
+  author = "Psaroudakis, Iraklis and Kaestle, Stefan and Grimmer, Matthias and Goodman, Daniel and Lozi, Jean-Pierre and Harris, Tim",
+  title = {Analytics with smart arrays: Adaptive and efficient language-independent data},
+  year = "2018",
+  month = "April",
+  isbn = {9781450355841},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3190508.3190514},
+  abstract = {This paper introduces smart arrays, an abstraction for providing adaptive and efficient language-independent data storage. Their smart functionalities include NUMA-aware data placement across sockets and bit compression. We show how our single C++ implementation can be used efficiently from both native C++ and compiled Java code. We experimentally evaluate smart arrays on a diverse set of C++ and Java analytics workloads. Further, we show how their smart functionalities affect performance and lead to differences in hardware resource demands on multicore machines, motivating the need for adaptivity. We observe that smart arrays can significantly decrease the memory space requirements of analytics workloads, and improve their performance by up to 4x. Smart arrays are the first step towards general smart collections with various smart functionalities that enable the consumption of hardware resources to be traded-off against one another.},
+  booktitle = {Proceedings of the Thirteenth EuroSys Conference},
+  articleno = {17},
+  numpages = {15},
+  keywords = {NUMA, adaptivity, compression, data structures, graph analytics, language interoperability, multicore, resource trade-offs},
+  location = {Porto, Portugal},
+  series = {EuroSys '18},
+  bibtex_show = {true},
+  pdf = {smart-collections.pdf}
+}
+
+@inproceedings{pandia,
+  author = "Goodman, Daniel and Varisteas, Georgios and Harris, Tim",
+  title = {Pandia: Comprehensive contention-sensitive thread placement},
+  year = "2017",
+  month = "April",
+  isbn = {9781450349383},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3064176.3064177},
+  abstract = {Pandia is a system for modeling the performance of in-memory parallel workloads. It generates a description of a workload from a series of profiling runs, and combines this with a description of the machine's hardware to model the workload's performance over different thread counts and different placements of those threads.The approach is "comprehensive" in that it accounts for contention at multiple resources such as processor functional units and memory channels. The points of contention for a workload can shift between resources as the degree of parallelism and thread placement changes. Pandia accounts for these changes and provides a close correspondence between predicted performance and actual performance. Testing a set of 22 benchmarks on 2 socket Intel machines fitted with chips ranging from Sandy Bridge to Haswell we see median differences of 1.05\% to 0\% between the fastest predicted placement and the fastest measured placement, and median errors of 8\% to 4\% across all placements.Pandia can be used to optimize the performance of a given workload---for instance, identifying whether or not multiple processor sockets should be used, and whether or not the workload benefits from using multiple threads per core. In addition, Pandia can be used to identify opportunities for reducing resource consumption where additional resources are not matched by additional performance---for instance, limiting a workload to a small number of cores when its scaling is poor.},
+  booktitle = {Proceedings of the Twelfth European Conference on Computer Systems},
+  pages = {254–269},
+  numpages = {16},
+  location = {Belgrade, Serbia},
+  series = {EuroSys '17},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = {Eurosys-2017-Pandia.pdf}
+}
+
+@article{threadScheduling,
+  author = "Khan, Behram and Goodman, Daniel and Khan, Salman and Toms, Will and Faraboschi, Paolo and Luj\'{a}n, Mikel and Watson, Ian",
+  title = {Architectural support for task scheduling: hardware scheduling for dataflow on NUMA systems},
+  year = "2015",
+  month = "June",
+  publisher = {Kluwer Academic Publishers},
+  address = {USA},
+  volume = {71},
+  number = {6},
+  issn = {0920-8542},
+  url = {https://doi.org/10.1007/s11227-015-1383-2},
+  abstract = {To harness the compute resource of many-core system with tens to hundreds of cores, applications have to expose parallelism to the hardware. Researchers are aggressively looking for program execution models that make it easier to expose parallelism and use the available resources. One common approach is to decompose a program into parallel `tasks' and allow an underlying system layer to schedule these tasks to different threads. Software-only schedulers can implement various scheduling policies and algorithms that match the characteristics of different applications and programming models. Unfortunately with large-scale multi-core systems, software schedulers suffer significant overheads as they synchronize and communicate task information over deep cache hierarchies. To reduce these overheads, hardware-only schedulers like Carbon have been proposed to enable task queuing and scheduling to be done in hardware. This paper presents a hardware scheduling approach where the structure provided to programs by task-based programming models can be incorporated into the scheduler, making it aware of a task's data requirements. This prior knowledge of a task's data requirements allows for better task placement by the scheduler which result in a reduction in overall cache misses and memory traffic, improving the program's performance and power utilization. Simulations of this technique for a range of synthetic benchmarks and components of real applications have shown a reduction in the number of cache misses by up to 72 and 95 \% for the L1 and L2 caches, respectively, and up to 30 \% improvement in overall execution time against FIFO scheduling. This results not only in faster execution and in less data transfer with reductions of up to 50 \%, allowing for less load on the interconnect, but also in lower power consumption.},
+  journal = "Journal of Supercomputing",
+  pages = {2309–2338},
+  numpages = {30},
+  keywords = {Dataflow, Hardware scheduling, Scheduling, Task-based application},
+  bibtex_show = {true},
+  pdf = {Supercomputing-numa.pdf}
+}
+
+@inproceedings{neosi,
+  author = "Daniel Goodman, Behram Khan, Mikel Luj\'{a}n, Ian Watson",
+  title = {Nesoi: Compile time checking of transactional coverage in parallel programs},
+  year = "2015",
+  month = "January",
+  abstract = {In this paper we describe our implementation of Nesoi, a tool for static checking the transactional requirements of a program. Nesoi categorizes the fields of each instance of an object in the program and reports missing and unrequired transactions at compile time. As transactional requirements are detected at the level of object fields in independent object instances the fields that need to be considered for possible collisions in a transaction can be cleanly identified, reducing the possibility of false collisions. Running against a set of benchmarks these fields account for just 2.5% of reads and 17-31% of writes within a transaction. Nesoi is constructed as a plugin for the Scala compiler and is integrated with the dataflow libraries used in the Teraflux project to providing support both for conventional programming modes and the dataflow + transactions model of the Teraflux project.},
+  booktitle = {Proceedings of Compilers for Parallel Computing 2015},
+  keywords = {Transactional Memory, Static Analysis},
+  location = {Imperial College, London, UK},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = {cpc-nesoi.pdf}
+}
+
+@article{teraflux,
+  title = {TERAFLUX: Harnessing dataflow in next generation teradevices},
+  journal = {Microprocessors and Microsystems},
+  volume = {38},
+  number = {8, Part B},
+  pages = {976-990},
+  year = {2014},
+  month = "November",
+  issn = {0141-9331},
+  url = {https://www.sciencedirect.com/science/article/pii/S0141933114000490},
+  author = {Roberto Giorgi and Rosa M. Badia and François Bodin and Albert Cohen and Paraskevas Evripidou and Paolo Faraboschi and Bernhard Fechner and Guang R. Gao and Arne Garbade and Rahul Gayatri and Sylvain Girbal and Daniel Goodman and Behran Khan and Souad Koliaï and Joshua Landwehr and Nhat Minh Lê and Feng Li and Mikel Lujàn and Avi Mendelson and Laurent Morin and Nacho Navarro and Tomasz Patejko and Antoniu Pop and Pedro Trancoso and Theo Ungerer and Ian Watson and Sebastian Weis and Stéphane Zuckerman and Mateo Valero},
+keywords = {Dataflow, Programming model, Compilation, Reliability, Architecture, Simulation, Many-cores, Exascale computing, Multi-cores},
+  abstract = {The improvements in semiconductor technologies are gradually enabling extreme-scale systems such as teradevices (i.e., chips composed by 1000 billion of transistors), most likely by 2020. Three major challenges have been identified: programmability, manageable architecture design, and reliability. TERAFLUX is a Future and Emerging Technology (FET) large-scale project funded by the European Union, which addresses such challenges at once by leveraging the dataflow principles. This paper presents an overview of the research carried out by the TERAFLUX partners and some preliminary results. Our platform comprises 1000+ general purpose cores per chip in order to properly explore the above challenges. An architectural template has been proposed and applications have been ported to the platform. Programming models, compilation tools, and reliability techniques have been developed. The evaluation is carried out by leveraging on modifications of the HP-Labs COTSon simulator.},
+  bibtex_show = {true},
+  pdf = {teraflux.pdf}
+}
+
+@inproceedings{teraflux2013,
+  author={Solinas, Marco and Badia, Rosa M. and Bodin, François and Cohen, Albert and Evripidou, Paraskevas and Faraboschi, Paolo and Fechner, Bernhard and Gao, Guang R. and Garbade, Arne and Girbal, Sylvain and Goodman, Daniel and Khan, Behran and Koliai, Souad and Li, Feng and Luján, Mikel and Morin, Laurent and Mendelson, Avi and Navarro, Nacho and Pop, Antoniu and Trancoso, Pedro and Ungerer, Theo and Valero, Mateo and Weis, Sebastian and Watson, Ian and Zuckermann, Stéphane and Giorgi, Roberto},
+  booktitle={2013 Euromicro Conference on Digital System Design}, 
+  title={The TERAFLUX project: Exploiting the dataflow paradigm in next generation teradevices},
+  abstract = {Thanks to the improvements in semiconductor technologies, extreme-scale systems such as teradevices (i.e., composed by 1000 billion of transistors) will enable systems with 1000+ general purpose cores per chip, probably by 2020. Three major challenges have been identified: programmability, manageable architecture design, and reliability. TERAFLUX is a Future and Emerging Technology (FET) large-scale project funded by the European Union, which addresses such challenges at once by leveraging the dataflow principles. This paper describes the project and provides an overview of the research carried out by the TERAFLUX consortium.},
+  year={2013},
+  month = "September",
+  pages={272-279},
+  keywords={Programming, Instruction sets, Computer architecture, Parallel processing, Reliability, dataflow programming model, compilation, simulation, many-cores, exascale computing, multi-cores},
+  bibtex_show = {true},
+  pdf = {dsd2013.pdf}
+}
+
+@inproceedings{dfm2013,
+  author={Goodman, Daniel and Khan, Behram and Luján, Mikel and Watson, Ian},
+  booktitle={2013 Data-Flow Execution Models for Extreme Scale Computing}, 
+  title={Improved dataflow executions with user assisted scheduling}, 
+  year={2013},
+  month = "September",
+  pages={14-21},
+  abstract = {In pure dataflow applications scheduling can have a huge effect on the memory footprint and number of active tasks in the program. However, in impure programs, scheduling not only effects the system resources, but can also effect the overall time complexity and accuracy of the program. To address both of these aspects this paper describes and analyses effective extensions to a dataflow scheduler to allow programmers to provide priority information describing the preferred execution order of a dataflow graph. We demonstrate that even very crude task priority metrics can be extremely effective, providing an average saving of 91% over the worst case scenario and 60% over the best case naive scenario. We also note that by specifying the scheduling information explicitly based on the algorithm, not the hardware, we provide portability to the application.},
+  keywords={Benchmark testing;Programming;Processor scheduling;Accuracy;Cities and towns;Program processors;Runtime;Dataflow;Scheduling;Mutable State},
+  bibtex_show = {true},
+  pdf = {dfm2013.pdf}
+}
+
+@article{TMforScala,
+  title = {Software transactional memories for Scala},
+  journal = {Journal of Parallel and Distributed Computing},
+  volume = {73},
+  number = {2},
+  pages = {150-163},
+  year = {2013},
+  month = "February",
+  issn = {0743-7315},
+  url = {https://www.sciencedirect.com/science/article/pii/S0743731512002304},
+  author = {Daniel Goodman and Behram Khan and Salman Khan and Mikel Luján and Ian Watson},
+  keywords = {Scala, Transactional memory, Software transactional memory},
+  abstract = {Transactional memory is an alternative to locks for handling concurrency in multi-threaded environments. Instead of providing critical regions that only one thread can enter at a time, transactional memory records sufficient information to detect and correct for conflicts if they occur. This paper surveys the range of options for implementing software transactional memory in Scala. Where possible, we provide references to implementations that instantiate each technique. As part of this survey, we document for the first time several techniques developed in the implementation of Manchester University Transactions for Scala. We order the implementation techniques on a scale moving from the least to the most invasive in terms of modifications to the compilation and runtime environment. This shows that, while the less invasive options are easier to implement and more common, they are more verbose and invasive in the codes using them, often requiring changes to the syntax and program structure throughout the code.},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = {jpdc2012.pdf}
+}
+
+@inproceedings{DFScala,
+  author = {Goodman, Daniel and Khan, Salman and Seaton, Chris and Guskov, Yegor and Khan, Behram and Luj\'{a}n, Mikel and Watson, Ian},
+  title = {DFScala: High-level dataflow support for Scala},
+  year = {2012},
+  month = "September",
+  isbn = {9780769549545},
+  publisher = {IEEE Computer Society},
+  address = {USA},
+  url = {https://doi.org/10.1109/DFM.2012.12},
+  abstract = {In this paper we present DFScala, a library for constructing and executing dataflow graphs in the Scala language. Through the use of Scala this library allows the programmer to construct coarse grained dataflow graphs that take advantage of functional semantics for the dataflow graph and both functional and imperative semantics within the dataflow nodes. This combination allows for very clean code which exhibits the properties of dataflow programs, but we believe is more accessible to imperative programmers. We first describe DFScala in detail, before using a number of benchmarks to evaluate both its scalability and its absolute performance relative to existing codes. DFScala has been constructed as part of the Teraflux project and is being used extensively as a basis for further research into dataflow programming.},
+  booktitle = {Proceedings of the 2012 Data-Flow Execution Models for Extreme Scale Computing},
+  pages = {18–26},
+  numpages = {9},
+  keywords = {Coarse Grained, Dataflow, Parallel Programming Model, Scala},
+  series = {DFM '12},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = {dfm2012.pdf}
+}
+
+@inproceedings{tmExit,
+  title = "A case for exiting a transaction in the context of hardware transactional memory",
+  abstract = "Despite the rapid growth in the area of Transactional Memory (TM), there is a lack of standardisation of certain features. The behaviour of a transactional abort is one such feature. All hardware TM and most software TM designs treat abort as a way of restarting the current transaction. However an alternative representation for the same functionality has been expressed in some software transactional memories and programming languages proposals. These allow the termination of a transaction without restarting. In this paper we argue that a similar functionality is required for hardware TM as well. We call this functionality Exit\_Transaction, in which a programmer can explicitly ask the underlying TM system to move to the end of the transaction without committing it. We discuss how to extend a hardware TM system to support such a feature and our evaluation with two hardware TM systems shows that by using this functionality a speedup of up to 1.35X can be achieved on the benchmarks tested. This is achieved as a result of lower contention for resources and less false positives.",
+  author = "Isuru Herath and Demian Rosas and Daniel Goodman and Mikel Luj\'{a}n and Ian Watson",
+  year = "2012",
+  month = "Febuary",
+  booktitle = "Proceedings of TRANSACT '12: 7th ACM SIGPLAN Workshop on Transactional Computing",
+  location = "New Orleans, LA, USA",
+  bibtex_show = {true},
+  pdf = "transact2012.pdf"
+}
+
+@inproceedings{LeeRouting,
+  title = "Applying dataflow and transactions to Lee routing",
+  keywords = "Dataflow Transactional Memory, Lee's Alogrithm",
+  author = "Chis Seaton and Daniel Goodman and Mikel Luj\'{a}n and Ian Watson",
+  year = "2012",
+  month = "January",
+  booktitle = "Proceedings of Programmability Issues for Heterogeneous Multicores",
+  note = "Best Paper",
+  abstract = {Programming multicore shared-memory systems is a chal-
+lenging combination of exposing parallelism in your program and com-
+municating between the resulting parallel paths of execution. The burden
+of communication can introduce complexity that is hard to separate from
+the pure expression of the algorithm and can negate the performance
+that is gained from parallelism. We are extending the Scala language
+with dataflow for creating parallelism and transactions for the controlled
+mutation of shared state. We take an early look at applying this work
+to Lee’s algorithm for routing circuit boards and consider the potential
+benefits of programming with this system with regard to the elegance of
+expression and the resulting performance. We show how our approach re-
+duces the number of lines of code and synchronisation operations needed,
+at the same time as improving real-world performance.},
+  bibtex_show = {true},
+  pdf = "multiprog2012.pdf"
+}
+
+@article{thiyagalingam2011a,
+  journal = {International journal of biomedical imaging},
+  pages = {137604},
+  title = {On the usage of GPUs for efficient motion estimation in medical image sequences},
+  volume = {2011},
+  author = {Thiyagalingam, Jearajan and Goodman, Daniel and Schnabel, Julia and Trefethen, Anne and Grau, Vicente},
+  year = {2011},
+  month = "August",
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1155/2011/137604},
+  eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1155/2011/137604},
+  abstract = {Images are ubiquitous in biomedical applications from basic research to clinical practice. With the rapid increase in resolution, dimensionality of the images and the need for real-time performance in many applications, computational requirements demand proper exploitation of multicore architectures. Towards this, GPU-specific implementations of image analysis algorithms are particularly promising. In this paper, we investigate the mapping of an enhanced motion estimation algorithm to novel GPU-specific architectures, the resulting challenges and benefits therein. Using a database of three-dimensional image sequences, we show that the mapping leads to substantial performance gains, up to a factor of 60, and can provide near-real-time experience. We also show how architectural peculiarities of these devices can be best exploited in the benefit of algorithms, most specifically for addressing the challenges related to their access patterns and different memory configurations. Finally, we evaluate the performance of the algorithm on three different GPU architectures and perform a comprehensive analysis of the results.},
+  bibtex_show = {true},
+  pdf = "biomed2011.pdf"
+}
+
+@inproceedings{muts,
+  title = "MUTS: Native Scala Constructs for Software Transactional Memory",
+  keywords = "Scala, Transactional Memory",
+  author = "Daniel Goodman and Behram Khan and Salman Khan and Chris Kirkham and Mikel Luj\'{a}n and Ian Watson",
+  year = "2011",
+  month = "June",
+  booktitle = "Proceedings of Scala Days 2011",
+  abstract = {In this paper we argue that the current approaches to implementing transactional memory in Scala, while very clean, adversely affect the programmability, readability and maintainability of transactional code. These problems occur out of a desire to avoid making modifications to the Scala compiler. As an alternative we introduce Manchester University Transactions for Scala (MUTS), which instead adds keywords to the Scala compiler to allow for the implementation of transactions through traditional block syntax such as that used in “while” statements. This allows for transactions that do not require a change of syntax style and do not restrict their granularity to whole classes or methods. While implementing MUTS does require some changes to the compiler’s parser, no further changes are required to the compiler. This is achieved by the parser describing the transactions in terms of existing constructs of the abstract syntax tree, and the use of Java Agents to rewrite to resulting class files once the compiler has completed. In addition to being an effective way of implementing transactional memory, this technique has the potential to be used as a light-weight way of adding support for additional Scala functionality to the Scala compiler.},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = "MUTS-final.pdf"
+}
+
+@article{GPU-Dataflow,
+  title = "Scientific GPU Programming with Data-Flow Languages",
+  keywords = "Dataflow, GPU",
+  author = "Daniel Goodman and Mikel Luj\'{a}n",
+  year = "2011",
+  month = "April",
+  journal = "Multi-Core and Reconfigurable Super Computing, University of Bristol",
+  bibtex_show = {true},
+  pdf = "Goodman-MRSC.pdf"
+}
+
+@inproceedings{measuringGPUs,
+  author = "Daniel Goodman",
+  title = "Environmental Considerations When Measuring Relative Performance of Graphics Cards",
+  booktitle = "Proceedings of GPUs and Accelerators in HPC 2010",
+  year = "2010",
+  abstract = "In this paper we examine some of the environmental conditions that have to be considered when comparing the performance of GPU’s to CPU’s. The range of these considerations varies greatly from the differing ages of the hardware used, to the effects of running the GPU code before the CPU code within the same binary. The latter of these has some quite surprising effects on the system as a whole. We then go on to test the different hardware performance at matrix multiplication using both their basic linear algebra libraries and hand coded functions. This is done while respecting the considerations we have described earlier in the paper, and addressing a problem that with the use of the Intel MKL library cannot be argued to be unfair to the CPU",
+  bibtex_show = {true},
+  pdf = "GPU_Speed.pdf"
+}
+
+@inproceedings{Goodman2008ProvenanceID,
+  title={Provenance in Dynamically Adjusted and Partitioned Workflows},
+  author={Daniel Goodman},
+  booktitle={2008 IEEE Fourth International Conference on eScience},
+  year={2008},
+  month = {December},
+  pages={39-46},
+  isbn = {9780769535357},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  abstract = {In this paper we describe the provenance system built into the distributed Martlet middleware. Due to both the need for scientific reproducibility, and to determine exactly what has happened with any given piece of analysis, it is necessary for this middleware to record detailed and structured provenance data in an easily query-able form. This is achieved through the use of integer clocks and directed graphs. Using these, this system is capable of keeping a complete history of the creation of all data, including the ability to store in-depth information defined by the task about the operations performed. This allows the system to continue to gather provenance data regardless of the rough grained functions being wrapped by the middleware. The middleware was developed to support functions described in "Martlet", a workflow language developed to address the problem of how to analyse the data generated by the climateprediction.net experiment. This data is both highly distributed, and resides in a dynamic environment where the partitioning of data structures across the distributed nodes may change both in the number of pieces and their locations, and resources may come and go. This makes it necessary for the structure of the workflows to change from execution to execution. As such the provenance system is also required to be able to handle such a dynamic environment.},
+  url={https://api.semanticscholar.org/CorpusID:7582596},
+  keywords = {Partitioned Data, Provenance, Workflow},
+  bibtex_show = {true},
+  pdf = {provenance.pdf}
+}
+
+@inproceedings {cancerImaging,
+  author = { Avila-Garcia, M.S. and Trefethen, A.E. and Brady, M. and Gleeson, F. and Goodman, D. }, 
+  booktitle = { 2008 IEEE Fourth International Conference on eScience },
+  title = { Lowering the barriers to cancer imaging },
+  year = {2008},
+  abstract = { There are various issues that limit the development and deployment of new software solutions in cancer image analysis research. In this paper we discuss some of these and propose a framework design based on cloud computing concepts, Microsoft technologies, existing middleware and imaging toolkits. Furthermore, we address some of these issues by introducing collaborative visual tools for visual input data and multi-user interactions. },
+  keywords = {Cancer, Image color analysis, Image segmentation, Biomedical imaging, Computed tomography, Image analysis, Liver neoplasms, Computer languages, Visualization, Medical diagnostic imaging},
+  url = {https://doi.ieeecomputersociety.org/10.1109/eScience.2008.33},
+  publisher = {IEEE Computer Society},
+  isbn = {9780769535357},
+  address = {Los Alamitos, CA, USA},
+  month = {December},
+  bibtex_show = {true},
+  pdf = {LoweringBarriers.pdf}
+}
+
+@article{martlet,
+  title = "A service-oriented architecture and language for abstracted distributed algorithms",
+  author = "Daniel Goodman",
+  year = 2007,
+  month = "August",
+  journal = {DPhil Thesis, Oxford University Computing Laboratory},
+  abstract = {This thesis describes a new programming model designed to provide an intuitive and efficient way of abstracting the partitioning of distributed input data when programming large, dynamic, distributed, parallel, computing environments. It then describes an implementation of this model as a workflow language (Martlet) and a supporting prototype middleware, as well as providing a range of case studies demonstrating the power of this model. Having introduced this model and implementing language, it concludes by describing how this can be of use in the wider scope of such dynamic environments by using just in time compilers to apply Martlet to mainstream middleware and to improve the utilisation of Condor Pools and Clusters. 
+
+Inspired by the inductive constructs of Functional Programming this programming model was designed to address the issue of how to allow users to write well abstracted programs in a so far poorly explored part of a new scenario presented by Grid Computing, where the location and partitioning of data is truly dynamic, and not under the control of the user. In this environment, unlike previous computing environments, datasets and computing resources are routinely split across a number of locations and organisations, and the nature of this split can often only be determined at runtime. 
+
+While many projects have been quick to embrace the idea of the Grid Computing platform, they have done so using the same basic programming models that they used in more traditional environments. As such they are restricted by assumptions made in these models that are no longer valid. These assumptions prevent programmers using the full potential of this new computing platform. The specific assumption removed through the programming model presented here is that the data is in a known and constant number of pieces when the program is constructed. This solves a common but often unrecognised problem in many eResearch projects, however, this problem must be solved before eResearch can reach its full potential. This realisation can already be seen in the growing number of workshops, conferences, and drives appearing in an attempt to describe programming models for this new computing platform.},
+  bibtex_show = {true},
+  selected = {true},
+  pdf = "GoodmanThesis.pdf"
+}
+
+@inproceedings{martlet-www07,
+  author = {Goodman, Daniel},
+  title = {Introduction and evaluation of Martlet: a scientific workflow language for abstracted parallelisation},
+  year = {2007},
+  month = {May},
+  isbn = {9781595936547},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/1242572.1242705},
+  abstract = {The workflow language Martlet described in this paper implements a new programming model that allows users to write parallel programs and analyse distributed data without having to be aware of the details of the parallelisation. Martlet abstracts the parallelisation of the computation and the splitting of the data through the inclusion of constructs inspired by functional programming. These allow programs to be written as an abstract description that can be adjusted automatically at runtime to match the data set and available resources. Using this model it is possible to write programs to perform complex calculations across a distributed data set such as Singular Value Decomposition or Least Squares problems, as well as creating an intuitive way of working with distributed system.Having described and evaluated Martlet against other functional languages for parallel computation, this paper goes on to look at how Martlet might develop. In doing so it covers both possible additions to the language itself, and the use of JIT compilers to increase the range of platforms it is capable of running on.},
+  booktitle = {Proceedings of the 16th International Conference on World Wide Web},
+  pages = {983–992},
+  numpages = {10},
+  keywords = {workflow, scientific computing, parallel computing, e-Science, distributing computing, abstraction, Martlet},
+  location = {Banff, Alberta, Canada},
+  series = {WWW '07},
+  note = {Nominated best student paper, 14% acceptance rate.},
+  bibtex_show = {true},
+  selected = {true},
+pdf = "www479-Goodman.pdf"
+}
+
+@inproceedings{martletAHM,
+  author = {Goodman, Daniel},
+  title = {Martlet: a scientific work-flow language for abstracted parallelisation},
+  booktitle = {Proceedings of UK e-science All Hands meeting},
+  location = {Nottingham, UK}, 
+  month = "September",
+  year = 2006,
+  note = "Best student paper",
+  abstract = {This paper describes a work-flow language ‘Martlet’ for the analysis of large quantities of distributed data. This work-flow language is fundamentally different to other languages as it implements a new programming model. Inspired by inductive constructs of functional programming this programming model allows it to abstract the complexities of data and processing distribution. This means the user is not required to have any knowledge of the underlying architecture or how to write distributed programs. As well as making distributed resources available to more people, this abstraction also reduces the potential for errors when writing distributed programs. While this abstraction places some restrictions on the user, it is descriptive enough to describe a large class of problems, including algorithms for solving Singular Value Decompositions and Least Squares problems. Currently this language runs on a stand-alone middleware. This middleware can however be adapted to run on top of a wide range of existing work-flow engines through the use of JIT compilers capable of producing other work-flow languages at run time. This makes this work applicable to a huge range of computing projects. },
+  bibtex_show = {true},
+  pdf = "martlet.pdf"
+}
+
+@article{Massey:CPDN,
+  title = "Data access and analysis with distributed federated data servers in climatePrediction.net",
+  author = "N. Massey and T. Aina and M. Allen and C. Christensen and D. Frame and D. Goodman and J Kettleborough and A. Martin and S. Pascoe and D. Stainforth",
+  year = "2006",
+  journal = "Advances in Geosciences",
+  month = "June",
+  pages = "49--56",
+  url = "http://intranet.oerc.ox.ac.uk/image-library/adgeo-8-49-2006.pdf",
+  volume = "8",
+  abstract = {climatePrediction.net is a large public resource distributed scientific computing project. Members of the public download and run a full-scale climate model, donate their computing time to a large perturbed physics ensemble experiment to forecast the climate in the 21st century and submit their results back to the project. The amount of data generated is large, consisting of tens of thousands of individual runs each in the order of tens of megabytes. The overall dataset is, therefore, in the order of terabytes. Access and analysis of the data is further complicated by the reliance on donated, distributed, federated data servers. This paper will discuss the problems encountered when the data required for even a simple analysis is spread across several servers and how webservice technology can be used; how different user interfaces with varying levels of complexity and flexibility can be presented to the application scientists, how using existing web technologies such as HTTP, SOAP, XML, HTML and CGI can engender the reuse of code across interfaces; and how application scientists can be notified of their analysis’ progress and results in an asynchronous architecture.},
+  bibtex_show = {true},
+  pdf = "adgeo-8-49-2006.pdf"
+}
+
+@techreport{Martlet:Middleware:OUCL,
+  title = "Scientific middleware for abstracted parallelisation",
+  author = "Daniel Goodman",
+  year = "2005",
+  institution = "Oxford University Computing Laboratory",
+  month = "November",
+  number = "RR-05-07",
+  abstract = "In this paper we introduce a class of problems that arise when the analysis of data split into an unknown number of pieces is attempted. Such analysis falls under the definition of Grid computing, but fails to be addressed by the current Grid computing projects, as they do not provide the appropriate abstractions. We then describe a distributed web service based middleware platform, which solves these problems by supporting construction of parallel data analysis functions for datasets with an unknown level of distribution. This analysis is achieved through the combination of Martlet, a work-flow language that uses constructs from functional programming to abstract the parallelisation in computations away from the user, and the construction of supporting middleware. To construct such a supporting middleware it is necessary to provide the capability to reason about the data structures held without restricting their nature. Issues covered in the development of this supporting middleware include the ability to handle distributed data transfer and management, function deployment and execution.",
+  bibtex_show = {true},
+  pdf = "middleware.pdf"
+}
+
+@inproceedings{GGFGoodmanMartin,
+  title = "Grid Style Web Services for ClimatePrediction.net",
+  author = "Daniel Goodman and Andrew Martin",
+  year = "2004",
+  month = "June",
+  booktitle = "GGF workshop on building Service-Based Grids",
+  location = "Honolulu, Hawaii",
+  editor = "S. Newhouse and S. Parastatidis",
+  organization = "Global Grid Forum",
+abstract = "In this paper we describe a architecture which implements call and pass by reference
+using asynchronous Web Services. This architecture provides a distributed data analysis
+environment where functions can be dynamically described and used.",
+  bibtex_show = {true},
+  pdf = "GGFPaper.pdf"
+}
+
+
+
+
+
+
+
