@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://daniel-goodman.github.io/sitemap.xml
