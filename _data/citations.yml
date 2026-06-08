@@ -1,8 +1,135 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-06-08'
 papers:
-#  qc6CJjYAAAAJ:-1WLWRmjvKAC:
-#    citations: 4
-#    title: THE DULONG-PETIT LAW OF SPECIFIC HEATS
-#    year: Unknown Year
-
+  o720OaAAAAAJ:0EnyYjriUFMC:
+    citations: 28
+    title: Data access and analysis with distributed federated data servers in climateprediction. net
+    year: '2006'
+  o720OaAAAAAJ:3fE2CSJIrl8C:
+    citations: 1
+    title: Grid style web services for climateprediction. net
+    year: '2004'
+  o720OaAAAAAJ:4DMP91E08xMC:
+    citations: 0
+    title: A dynamic world, what can Grids do for Multi-core computing?
+    year: Unknown Year
+  o720OaAAAAAJ:4TOpqqG69KYC:
+    citations: 3
+    title: A case for Exiting a Transaction in the Context of Hardware Transactional Memory
+    year: '2012'
+  o720OaAAAAAJ:5nxA0vEk-isC:
+    citations: 7
+    title: 'Martlet: a scientific work-flow language for abstracted parallisation'
+    year: '2006'
+  o720OaAAAAAJ:7PzlFSSx8tAC:
+    citations: 15
+    title: Software transactional memories for scala
+    year: '2013'
+  o720OaAAAAAJ:8k81kl-MbHgC:
+    citations: 39
+    title: Lowering the barriers to cancer imaging
+    year: '2008'
+  o720OaAAAAAJ:9ZlFYXVOiuMC:
+    citations: 0
+    title: Programming Research Group Research Report RR-05-07
+    year: Unknown Year
+  o720OaAAAAAJ:IWHjjKOFINEC:
+    citations: 46
+    title: 'The TERAFLUX project: Exploiting the dataflow paradigm in next generation teradevices'
+    year: '2013'
+  o720OaAAAAAJ:KlAtU1dfN6UC:
+    citations: 17
+    title: Applying dataflow and transactions to Lee routing
+    year: '2012'
+  o720OaAAAAAJ:M3ejUd6NZC8C:
+    citations: 0
+    title: Decentralised Middleware and Workflow Enactment for the Martlet Workflow Language
+    year: '2008'
+  o720OaAAAAAJ:MXK_kJrjxJIC:
+    citations: 4
+    title: Scientific Middleware for Abstracted Parallisation
+    year: '2005'
+  o720OaAAAAAJ:QIV2ME_5wuYC:
+    citations: 0
+    title: "The influence of \u201Cthe Grid\u201D on Multi-core computing"
+    year: Unknown Year
+  o720OaAAAAAJ:RHpTSmoSYBkC:
+    citations: 0
+    title: Environmental Considerations When Measuring Relative Performance of Graphics Cards
+    year: '2010'
+  o720OaAAAAAJ:TFP_iSt0sucC:
+    citations: 0
+    title: 'Vate: Runtime Adaptable Probabilistic Programming for Java'
+    year: '2021'
+  o720OaAAAAAJ:ULOm3_A8WrAC:
+    citations: 1
+    title: Scientific GPU Programming with Data-Flow Languages
+    year: '2011'
+  o720OaAAAAAJ:Wp0gIr-vW9MC:
+    citations: 3
+    title: Parallel Processing
+    year: '2009'
+  o720OaAAAAAJ:YOwf2qJgpHMC:
+    citations: 1
+    title: A service-oriented architecture and language for abstracted distributed algorithms
+    year: '2007'
+  o720OaAAAAAJ:ZeXyd9-uunAC:
+    citations: 1
+    title: Improved dataflow executions with user assisted scheduling
+    year: '2013'
+  o720OaAAAAAJ:Zph67rFs4hoC:
+    citations: 1
+    title: A Block-Lanczos Method for Computing the Leading Singular Values and Vectors of a Large Column-Distributed Matrix
+    year: '2007'
+  o720OaAAAAAJ:_kc_bZDykSQC:
+    citations: 0
+    title: Cloud Computing Framework Design for Cancer Imaging Research
+    year: Unknown Year
+  o720OaAAAAAJ:aqlVkmm33-oC:
+    citations: 2
+    title: Provenance in dynamically adjusted and partitioned workflows
+    year: '2008'
+  o720OaAAAAAJ:bEWYMUwI8FkC:
+    citations: 11
+    title: 'Analytics with smart arrays: Adaptive and efficient language-independent data'
+    year: '2018'
+  o720OaAAAAAJ:dhFuZR0502QC:
+    citations: 18
+    title: 'Dfscala: High level dataflow support for scala'
+    year: '2012'
+  o720OaAAAAAJ:hC7cP41nSMkC:
+    citations: 6
+    title: 'Architectural support for task scheduling: hardware scheduling for dataflow on NUMA systems'
+    year: '2015'
+  o720OaAAAAAJ:hqOjcs7Dif8C:
+    citations: 35
+    title: 'Introduction and evaluation of martlet: A scientific workflow language for abstracted parallelisation'
+    year: '2007'
+  o720OaAAAAAJ:iH-uZ7U-co4C:
+    citations: 28
+    title: 'Pandia: Comprehensive contention-sensitive thread placement'
+    year: '2017'
+  o720OaAAAAAJ:isC4tDSrTZIC:
+    citations: 0
+    title: Modeling memory bandwidth patterns on NUMA machines with performance counters
+    year: '2021'
+  o720OaAAAAAJ:kNdYIx-mwKoC:
+    citations: 8
+    title: 'Muts: Native scala constructs for software transactional memory'
+    year: '2011'
+  o720OaAAAAAJ:mVmsd5A6BfQC:
+    citations: 0
+    title: Transactions for Scala
+    year: Unknown Year
+  o720OaAAAAAJ:qUcmZB5y_30C:
+    citations: 86
+    title: 'TERAFLUX: Harnessing dataflow in next generation teradevices'
+    year: '2014'
+  o720OaAAAAAJ:qxL8FJ1GzNcC:
+    citations: 5
+    title: On the usage of GPUs for efficient motion estimation in medical image sequences
+    year: '2011'
+  o720OaAAAAAJ:r0BpntZqJG4C:
+    citations: 0
+    title: 'Nesoi: Compile time checking of transactional coverage in parallel programs'
+    year: '2015'
