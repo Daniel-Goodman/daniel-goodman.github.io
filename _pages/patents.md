@@ -1,6 +1,6 @@
 ---
 layout: book-shelf
-title: patents
+title: Patents
 permalink: /patents/
 nav: patents
 nav_order: 3
