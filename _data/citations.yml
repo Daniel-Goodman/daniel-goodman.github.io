@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-08'
+  last_updated: '2026-06-24'
 papers:
   o720OaAAAAAJ:0EnyYjriUFMC:
     citations: 28
@@ -22,7 +22,7 @@ papers:
     title: 'Martlet: a scientific work-flow language for abstracted parallisation'
     year: '2006'
   o720OaAAAAAJ:7PzlFSSx8tAC:
-    citations: 15
+    citations: 16
     title: Software transactional memories for scala
     year: '2013'
   o720OaAAAAAJ:8k81kl-MbHgC:
@@ -33,14 +33,34 @@ papers:
     citations: 0
     title: Programming Research Group Research Report RR-05-07
     year: Unknown Year
+  o720OaAAAAAJ:BqipwSGYUEgC:
+    citations: 0
+    title: Numeric Operations on Logarithmically Encoded Data Values
+    year: '2022'
+  o720OaAAAAAJ:GnPB-g6toBAC:
+    citations: 0
+    title: Comprehensive contention-based thread allocation and placement
+    year: '2024'
   o720OaAAAAAJ:IWHjjKOFINEC:
-    citations: 46
+    citations: 47
     title: 'The TERAFLUX project: Exploiting the dataflow paradigm in next generation teradevices'
     year: '2013'
+  o720OaAAAAAJ:JV2RwH3_ST0C:
+    citations: 0
+    title: Architectural Support for Task Scheduling
+    year: Unknown Year
+  o720OaAAAAAJ:J_g5lzvAfSwC:
+    citations: 0
+    title: 'Sandwood: Runtime Adaptable Probabilistic Programming for Java'
+    year: Unknown Year
   o720OaAAAAAJ:KlAtU1dfN6UC:
     citations: 17
     title: Applying dataflow and transactions to Lee routing
     year: '2012'
+  o720OaAAAAAJ:M3NEmzRMIkIC:
+    citations: 0
+    title: Read, Write, And Array Tracking In Code Representations
+    year: '2025'
   o720OaAAAAAJ:M3ejUd6NZC8C:
     citations: 0
     title: Decentralised Middleware and Workflow Enactment for the Martlet Workflow Language
@@ -49,16 +69,36 @@ papers:
     citations: 4
     title: Scientific Middleware for Abstracted Parallisation
     year: '2005'
+  o720OaAAAAAJ:NMxIlDl6LWMC:
+    citations: 1
+    title: Language interoperable runtime adaptable data collections
+    year: '2023'
+  o720OaAAAAAJ:NaGl4SEjCO4C:
+    citations: 0
+    title: 'Nesoi: Static checking of transactional coverage in parallel programs'
+    year: Unknown Year
+  o720OaAAAAAJ:O3NaXMp0MMsC:
+    citations: 6
+    title: Language interoperable runtime adaptable data collections
+    year: '2020'
   o720OaAAAAAJ:QIV2ME_5wuYC:
     citations: 0
     title: "The influence of \u201Cthe Grid\u201D on Multi-core computing"
     year: Unknown Year
+  o720OaAAAAAJ:RGFaLdJalmkC:
+    citations: 0
+    title: Language interoperable runtime adaptable data collections
+    year: '2025'
   o720OaAAAAAJ:RHpTSmoSYBkC:
     citations: 0
     title: Environmental Considerations When Measuring Relative Performance of Graphics Cards
     year: '2010'
-  o720OaAAAAAJ:TFP_iSt0sucC:
+  o720OaAAAAAJ:RYcK_YlVTxYC:
     citations: 0
+    title: Language Interoperable Runtime Adaptable Data Collections
+    year: '2025'
+  o720OaAAAAAJ:TFP_iSt0sucC:
+    citations: 1
     title: 'Vate: Runtime Adaptable Probabilistic Programming for Java'
     year: '2021'
   o720OaAAAAAJ:ULOm3_A8WrAC:
@@ -69,6 +109,10 @@ papers:
     citations: 3
     title: Parallel Processing
     year: '2009'
+  o720OaAAAAAJ:YFjsv_pBGBYC:
+    citations: 0
+    title: Generating Different Sampling Orders of Random Variables in a Bayesian Model for Markov Chain Monte Carlo Sampling Techniques
+    year: '2025'
   o720OaAAAAAJ:YOwf2qJgpHMC:
     citations: 1
     title: A service-oriented architecture and language for abstracted distributed algorithms
@@ -93,20 +137,28 @@ papers:
     citations: 11
     title: 'Analytics with smart arrays: Adaptive and efficient language-independent data'
     year: '2018'
+  o720OaAAAAAJ:blknAaTinKkC:
+    citations: 6
+    title: Detection, modeling and application of memory bandwith patterns
+    year: '2020'
   o720OaAAAAAJ:dhFuZR0502QC:
-    citations: 18
+    citations: 19
     title: 'Dfscala: High level dataflow support for scala'
     year: '2012'
   o720OaAAAAAJ:hC7cP41nSMkC:
     citations: 6
     title: 'Architectural support for task scheduling: hardware scheduling for dataflow on NUMA systems'
     year: '2015'
+  o720OaAAAAAJ:hMod-77fHWUC:
+    citations: 0
+    title: Comprehensive contention-based thread allocation and placement
+    year: '2023'
   o720OaAAAAAJ:hqOjcs7Dif8C:
     citations: 35
     title: 'Introduction and evaluation of martlet: A scientific workflow language for abstracted parallelisation'
     year: '2007'
   o720OaAAAAAJ:iH-uZ7U-co4C:
-    citations: 28
+    citations: 29
     title: 'Pandia: Comprehensive contention-sensitive thread placement'
     year: '2017'
   o720OaAAAAAJ:isC4tDSrTZIC:
@@ -121,6 +173,14 @@ papers:
     citations: 0
     title: Transactions for Scala
     year: Unknown Year
+  o720OaAAAAAJ:maZDTaKrznsC:
+    citations: 0
+    title: Template Generation For Exploring Models With Discrete Random Variable Distributions
+    year: '2025'
+  o720OaAAAAAJ:ns9cj8rnVeAC:
+    citations: 0
+    title: Generating Constraints In A Target Programming Language From Traces Of Operations Specified In An Input
+    year: '2025'
   o720OaAAAAAJ:qUcmZB5y_30C:
     citations: 86
     title: 'TERAFLUX: Harnessing dataflow in next generation teradevices'
