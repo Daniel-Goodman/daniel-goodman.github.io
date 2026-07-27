@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-15'
+  last_updated: '2026-07-27'
 papers:
   o720OaAAAAAJ:0EnyYjriUFMC:
     citations: 28
@@ -39,8 +39,8 @@ papers:
     year: '2022'
   o720OaAAAAAJ:GnPB-g6toBAC:
     citations: 0
-    title: Comprehensive contention-based thread allocation and placement
-    year: '2024'
+    title: Comprehensive Contention-Based Thread Allocation and Placement
+    year: '2018'
   o720OaAAAAAJ:IWHjjKOFINEC:
     citations: 47
     title: 'The TERAFLUX project: Exploiting the dataflow paradigm in next generation teradevices'
